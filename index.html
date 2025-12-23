@@ -4,12 +4,7 @@ author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  actions:
-    - label: "View CVEs"
-      url: "/cves/"
-    - label: "Resume"
-      url: "/about/"
-excerpt: "Security researcher specializing in vulnerability discovery and penetration testing. Discovered 5 critical CVEs (CVSS 10.0) in production systems."
+excerpt: '<span id="typed"></span>'
 feature_row:
   - title: "5 Critical CVEs"
     excerpt: "Discovered and responsibly disclosed 5 critical-severity vulnerabilities (CVSS 10.0) in Coolify, resulting in CVE-2025-66209 through CVE-2025-66213."
@@ -27,5 +22,24 @@ feature_row:
     btn_label: "Learn More"
     btn_class: "btn--primary"
 ---
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    new Typed('#typed', {
+      strings: [
+        'Offensive Security Researcher',
+        'CVE Discoverer',
+        'Breaking systems to secure them',
+        'CMU Graduate Student'
+      ],
+      typeSpeed: 45,
+      backSpeed: 20,
+      backDelay: 1500,
+      loop: true,
+      showCursor: true,
+      cursorChar: '_'
+    });
+  });
+</script>
 
 {% include feature_row %}
