@@ -5,9 +5,31 @@ permalink: /about/
 author_profile: true
 ---
 
-## Summary
+```bash
+rakan@research:~$ whoami
+Offensive Security Researcher specializing in vulnerability discovery,
+responsible disclosure, and exploit analysis.
 
-Offensive Security Engineer with experience in red teaming, vulnerability research, penetration testing, and purple team operations. Discovered multiple critical-severity vulnerabilities resulting in assigned CVEs. Strong background in adversary emulation, detection validation, and security automation across cloud, application, and network environments.
+rakan@research:~$ ls focus
+CVE_Research  Exploitation  Web_Security  Automation  Container_Security
+
+rakan@research:~$ cat philosophy.txt
+Find bugs.
+Understand impact.
+Document precisely.
+Disclose responsibly.
+
+rakan@research:~$ cat credentials.txt
+```
+
+---
+
+## At a Glance
+
+- **CVE Discoveries:** 5 (CVSS 10.0)
+- **Focus:** Command injection, privilege escalation, container escape
+- **Tools:** Burp Suite, Python, Docker, Metasploit, Nmap
+- **Disclosure:** Responsible, coordinated via GitHub Security
 
 ---
 
@@ -67,7 +89,7 @@ Achievements:
 
 ---
 
-## Vulnerability Research & Responsible Disclosure
+## Research & Responsible Disclosure
 
 ### Coolify (Open-Source Cloud Platform)
 
@@ -77,7 +99,7 @@ Discovered and responsibly disclosed five critical-severity vulnerabilities (CVS
 - Collaborated with maintainers on validation, root-cause analysis, and remediation prior to public release
 - All vulnerabilities involved command injection leading to container escape and root privilege escalation
 
-[View detailed CVE analysis](/cves/)
+[View detailed analysis](/cves/)
 
 ---
 
@@ -92,7 +114,7 @@ Discovered and responsibly disclosed five critical-severity vulnerabilities (CVS
 
 ---
 
-## Technical Skills
+## Technical Arsenal
 
 ### Offensive Security
 - Web/API penetration testing
