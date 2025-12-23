@@ -119,7 +119,6 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Offensive Security Engineer | Vulnerability Researcher | CMU Graduate Student (INI)"
   location         : "Pittsburgh, PA"
-  email            : "ralmutai@andrew.cmu.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
