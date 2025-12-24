@@ -10,7 +10,7 @@ toc_icon: "shield-alt"
 
 ## Overview
 
-I discovered and responsibly disclosed five critical-severity vulnerabilities (CVSS 10.0) in Coolify, a popular open-source cloud deployment platform. All vulnerabilities involve authenticated command injection that allows users to achieve container escape and root-level code execution on managed servers.
+I discovered and responsibly disclosed five critical-severity vulnerabilities (CVSS 9.4) in Coolify, a popular open-source cloud deployment platform. All vulnerabilities involve authenticated command injection that allows users to achieve container escape and root-level code execution on managed servers.
 
 Public Disclosure: [GitHub Repository](https://github.com/0xrakan/coolify-cve-2025-66209-66213)
 
@@ -19,7 +19,7 @@ Public Disclosure: [GitHub Repository](https://github.com/0xrakan/coolify-cve-20
 ## CVE-2025-66213
 ### Authenticated Remote Code Execution via Command Injection in File Storage Directory Mount Path
 
-CVSS Score: 10.0 (Critical)  
+CVSS Score: 9.4 (Critical)  
 GHSA ID: [GHSA-cj2c-9jx8-j427](https://github.com/coollabsio/coolify/security/advisories/GHSA-cj2c-9jx8-j427)  
 CWE: CWE-78 (OS Command Injection)
 
@@ -36,7 +36,7 @@ An authenticated command injection vulnerability in the File Storage Directory M
 ## CVE-2025-66212
 ### Authenticated Remote Code Execution via Command Injection in Dynamic Proxy Configuration Filename
 
-CVSS Score: 10.0 (Critical)  
+CVSS Score: 9.4 (Critical)  
 GHSA ID: [GHSA-q7rg-2j7p-83gp](https://github.com/coollabsio/coolify/security/advisories/GHSA-q7rg-2j7p-83gp)  
 CWE: CWE-78 (OS Command Injection)
 
@@ -53,7 +53,7 @@ An authenticated command injection vulnerability in the Dynamic Proxy Configurat
 ## CVE-2025-66211
 ### Authenticated Remote Code Execution via Command Injection in PostgreSQL Init Script Filename
 
-CVSS Score: 10.0 (Critical)  
+CVSS Score: 9.4 (Critical)  
 GHSA ID: [GHSA-24mp-fc9q-c884](https://github.com/coollabsio/coolify/security/advisories/GHSA-24mp-fc9q-c884)  
 CWE: CWE-78 (OS Command Injection)
 
@@ -70,7 +70,7 @@ An authenticated command injection vulnerability in PostgreSQL Init Script Filen
 ## CVE-2025-66209
 ### Authenticated Remote Code Execution via Command Injection in Database Backup
 
-CVSS Score: 10.0 (Critical)  
+CVSS Score: 9.4 (Critical)  
 GHSA ID: [GHSA-vm5p-43qh-7pmq](https://github.com/coollabsio/coolify/security/advisories/GHSA-vm5p-43qh-7pmq)  
 CWE: CWE-78 (OS Command Injection)
 
@@ -87,7 +87,7 @@ An authenticated command injection vulnerability in the Database Backup function
 ## CVE-2025-66210
 ### Authenticated Remote Code Execution via Command Injection in Database Import
 
-CVSS Score: 10.0 (Critical)  
+CVSS Score: 9.4 (Critical)  
 GHSA ID: [GHSA-q33h-22xm-4cgh](https://github.com/coollabsio/coolify/security/advisories/GHSA-q33h-22xm-4cgh)  
 CWE: CWE-78 (OS Command Injection)
 
@@ -127,11 +127,11 @@ Fixed Release: [v4.0.0-beta.451](https://github.com/coollabsio/coolify/releases/
 
 ## Disclosure Timeline
 
-- November 2024: Vulnerabilities discovered and reported to maintainer
-- December 2024: CVE IDs assigned by GitHub Security
+- November 2025: Vulnerabilities discovered and reported to maintainer
+- December 2025: CVE IDs assigned by GitHub Security
 - December 3, 2024: Fixes released in v4.0.0-beta.451
 - December 21, 2024: Public disclosure
-
+- December 23, 2025: CVEs officially published to CVE.org
 ---
 
 ## References
