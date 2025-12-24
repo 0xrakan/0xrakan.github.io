@@ -7,13 +7,9 @@ permalink: /certifications/
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-.page__content {
-  font-family: 'Inter', sans-serif;
-  position: relative;
-  z-index: 2;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+body {
+  background: #000;
+  color: #fff;
 }
 
 #cert-particles {
@@ -26,80 +22,92 @@ permalink: /certifications/
   pointer-events: none;
 }
 
-.page__title {
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.page-title {
   font-size: 3.5rem;
   font-weight: 900;
   background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   animation: fadeIn 1s ease-out;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-h2 {
-  color: #667eea;
-  font-weight: 700;
-  margin-top: 3rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid rgba(102, 126, 234, 0.3);
+.cert-section {
+  margin-bottom: 3rem;
   animation: slideIn 0.8s ease-out;
 }
 
 @keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 4px solid #764ba2;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+h2 {
+  color: #667eea;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.3);
 }
 
 h3 {
   color: #764ba2;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: rgba(118, 75, 162, 0.05);
-  border-left: 4px solid #764ba2;
-  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.page__content a {
-  color: #667eea;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.page__content a:hover {
-  color: #764ba2;
+p {
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+  margin: 1rem 0;
 }
 
-ul li {
+li {
   padding-left: 1.5rem;
   position: relative;
   margin-bottom: 0.5rem;
+  color: #ccc;
 }
 
-ul li::before {
+li::before {
   content: '✓';
   position: absolute;
   left: 0;
@@ -107,99 +115,111 @@ ul li::before {
   font-weight: bold;
 }
 
-hr {
-  border: none;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.5), transparent);
-  margin: 2.5rem 0;
-}
-
 .btn {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 1rem 2.5rem;
   background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #fff !important;
-  border-radius: 8px;
-  margin: 0.5rem;
-  transition: all 0.3s ease;
+  color: #fff;
   text-decoration: none;
+  border-radius: 8px;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  font-weight: 600;
 }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.5), transparent);
+  margin: 3rem 0;
+}
 </style>
 
 <canvas id="cert-particles"></canvas>
 
-<div class="page__content">
-
-## Professional Certifications
-
-### Offensive Security Certified Professional (OSCP)
-Industry-leading hands-on penetration testing certification. Demonstrates practical skills in identifying and exploiting vulnerabilities in realistic network environments.
-
-Key Skills:
-- Network penetration testing
-- Buffer overflow exploitation
-- Privilege escalation (Linux & Windows)
-- Web application attacks
-- Active Directory exploitation
-
----
-
-### Offensive Security Defense Analyst (OSDA)
-Advanced defensive security certification focusing on detection, monitoring, and incident response.
-
-Key Skills:
-- Security monitoring and log analysis
-- Threat hunting
-- Incident detection and response
-- SIEM deployment and tuning
-- Purple team operations
-
----
-
-### Cisco Certified Network Associate (CCNA)
-Fundamental networking certification covering network fundamentals, IP connectivity, and security.
-
-Key Skills:
-- Network configuration and troubleshooting
-- Routing and switching
-- Network security fundamentals
-- Cisco device management
-
----
-
-### CompTIA Security+
-Foundational cybersecurity certification covering essential security concepts and best practices.
-
-Key Skills:
-- Security concepts and terminology
-- Risk management
-- Cryptography
-- Identity and access management
-- Security operations
-
----
-
-## Continuous Learning
-
-I maintain active engagement with the security community through:
-- CTF competitions and challenges
-- Security research and vulnerability discovery
-- Open-source security tool development
-- Academic coursework at Carnegie Mellon University
-
----
-
-[Back to About](/about/){: .btn .btn--primary}
-
+<div class="content-wrapper">
+  <h1 class="page-title">Certifications</h1>
+  
+  <h2>Professional Certifications</h2>
+  
+  <div class="cert-section">
+    <div class="cert-card">
+      <h3>Offensive Security Certified Professional (OSCP)</h3>
+      <p>Industry-leading hands-on penetration testing certification. Demonstrates practical skills in identifying and exploiting vulnerabilities in realistic network environments.</p>
+      <p><strong>Key Skills:</strong></p>
+      <ul>
+        <li>Network penetration testing</li>
+        <li>Buffer overflow exploitation</li>
+        <li>Privilege escalation (Linux & Windows)</li>
+        <li>Web application attacks</li>
+        <li>Active Directory exploitation</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="cert-section">
+    <div class="cert-card">
+      <h3>Offensive Security Defense Analyst (OSDA)</h3>
+      <p>Advanced defensive security certification focusing on detection, monitoring, and incident response.</p>
+      <p><strong>Key Skills:</strong></p>
+      <ul>
+        <li>Security monitoring and log analysis</li>
+        <li>Threat hunting</li>
+        <li>Incident detection and response</li>
+        <li>SIEM deployment and tuning</li>
+        <li>Purple team operations</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="cert-section">
+    <div class="cert-card">
+      <h3>Cisco Certified Network Associate (CCNA)</h3>
+      <p>Fundamental networking certification covering network fundamentals, IP connectivity, and security.</p>
+      <p><strong>Key Skills:</strong></p>
+      <ul>
+        <li>Network configuration and troubleshooting</li>
+        <li>Routing and switching</li>
+        <li>Network security fundamentals</li>
+        <li>Cisco device management</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="cert-section">
+    <div class="cert-card">
+      <h3>CompTIA Security+</h3>
+      <p>Foundational cybersecurity certification covering essential security concepts and best practices.</p>
+      <p><strong>Key Skills:</strong></p>
+      <ul>
+        <li>Security concepts and terminology</li>
+        <li>Risk management</li>
+        <li>Cryptography</li>
+        <li>Identity and access management</li>
+        <li>Security operations</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="divider"></div>
+  
+  <h2>Continuous Learning</h2>
+  <p>I maintain active engagement with the security community through:</p>
+  <ul>
+    <li>CTF competitions and challenges</li>
+    <li>Security research and vulnerability discovery</li>
+    <li>Open-source security tool development</li>
+    <li>Academic coursework at Carnegie Mellon University</li>
+  </ul>
+  
+  <a href="/about/" class="btn">Back to About</a>
 </div>
 
 <script>
-// Particle background
 const canvas = document.getElementById('cert-particles');
 const ctx = canvas.getContext('2d');
 
@@ -223,7 +243,6 @@ class Particle {
   update() {
     this.x += this.speedX;
     this.y += this.speedY;
-    
     if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
     if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
   }
@@ -248,7 +267,6 @@ function animate() {
     particle.draw();
   });
   
-  // Connect particles
   for (let a = 0; a < particles.length; a++) {
     for (let b = a + 1; b < particles.length; b++) {
       const dx = particles[a].x - particles[b].x;
