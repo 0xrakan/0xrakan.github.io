@@ -129,8 +129,8 @@ Fixed Release: [v4.0.0-beta.451](https://github.com/coollabsio/coolify/releases/
 
 - November 2025: Vulnerabilities discovered and reported to maintainer
 - December 2025: CVE IDs assigned by GitHub Security
-- December 3, 2024: Fixes released in v4.0.0-beta.451
-- December 21, 2024: Public disclosure
+- December 3, 2025: Fixes released in v4.0.0-beta.451
+- December 21, 2025: Public disclosure
 - December 23, 2025: CVEs officially published to CVE.org
 ---
 
@@ -140,18 +140,26 @@ Fixed Release: [v4.0.0-beta.451](https://github.com/coollabsio/coolify/releases/
 - Fix PR: [coollabsio/coolify#7375](https://github.com/coollabsio/coolify/pull/7375)
 - Release Notes: [v4.0.0-beta.451](https://github.com/coollabsio/coolify/releases/tag/v4.0.0-beta.451)
 - MITRE CVE Database: CVE-2025-66209, CVE-2025-66210, CVE-2025-66211, CVE-2025-66212, CVE-2025-66213
+---
+
+**CVE.org Records:**
+- [CVE-2025-66209](https://www.cve.org/CVERecord?id=CVE-2025-66209)
+- [CVE-2025-66210](https://www.cve.org/CVERecord?id=CVE-2025-66210)
+- [CVE-2025-66211](https://www.cve.org/CVERecord?id=CVE-2025-66211)
+- [CVE-2025-66212](https://www.cve.org/CVERecord?id=CVE-2025-66212)
+- [CVE-2025-66213](https://www.cve.org/CVERecord?id=CVE-2025-66213)
 
 ---
 
-## CVE-to-GHSA Mapping
+## CVE Registry
 
-| CVE ID | GHSA ID | Component |
-|--------|---------|-----------|
-| CVE-2025-66213 | GHSA-cj2c-9jx8-j427 | File Storage Directory Mount Path |
-| CVE-2025-66212 | GHSA-q7rg-2j7p-83gp | Dynamic Proxy Configuration Filename |
-| CVE-2025-66211 | GHSA-24mp-fc9q-c884 | PostgreSQL Init Script Filename |
-| CVE-2025-66209 | GHSA-vm5p-43qh-7pmq | Database Backup |
-| CVE-2025-66210 | GHSA-q33h-22xm-4cgh | Database Import |
+| CVE ID | CVE.org Link | GHSA ID | Component | Status |
+|--------|--------------|---------|-----------|--------|
+| CVE-2025-66213 | [View](https://www.cve.org/CVERecord?id=CVE-2025-66213) | GHSA-cj2c-9jx8-j427 | File Storage Directory Mount Path | Patched |
+| CVE-2025-66212 | [View](https://www.cve.org/CVERecord?id=CVE-2025-66212) | GHSA-q7rg-2j7p-83gp | Dynamic Proxy Configuration Filename | Patched |
+| CVE-2025-66211 | [View](https://www.cve.org/CVERecord?id=CVE-2025-66211) | GHSA-24mp-fc9q-c884 | PostgreSQL Init Script Filename | Patched |
+| CVE-2025-66209 | [View](https://www.cve.org/CVERecord?id=CVE-2025-66209) | GHSA-vm5p-43qh-7pmq | Database Backup | Patched |
+| CVE-2025-66210 | [View](https://www.cve.org/CVERecord?id=CVE-2025-66210) | GHSA-q33h-22xm-4cgh | Database Import | Patched |
 
 ---
 
