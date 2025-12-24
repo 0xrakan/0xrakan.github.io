@@ -71,7 +71,7 @@ Achievements:
 
 ### Coolify (Open-Source Cloud Platform)
 
-Discovered and responsibly disclosed five critical-severity vulnerabilities (CVSS 10.0), resulting in assigned CVEs: CVE-2025-66209 through CVE-2025-66213.
+Discovered and responsibly disclosed five critical-severity vulnerabilities (CVSS 9.4), resulting in assigned CVEs: CVE-2025-66209 through CVE-2025-66213.
 
 - Coordinated disclosure via GitHub Security Advisories
 - Collaborated with maintainers on validation, root-cause analysis, and remediation prior to public release
